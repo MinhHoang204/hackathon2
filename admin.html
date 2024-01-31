@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My projects</h1>
+    <form id="projectFrom">
+        <input type="text" id="projectName" placeholder="projectName" required>
+        <input type="text" id="ImageURL" placeholder="ImageURL" required>
+        <input type="text" id="Link" placeholder="Link" required>
+        <input type="text" id="Tags (Ex:React,Angular)" placeholder="Tags (Ex:React,Angular)" required>
+        <button type="submit">New project</button>
+    </form>
+    <table id="projectTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Project Name</th>
+                <th>Image URL</th>
+                <th>Link</th>
+                <th>Tags</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>Auto Drive Project</th>
+                <th>https://li.postimg.cc/nrCjHQk8/Angular.png</th>
+                <th>https://abcd-example.com</th>
+                <th>
+                    <p>Angular</p>
+                    <p>React</p>
+                    <p>Jquery</p>
+                </th>
+                <th>
+                    <button class="editButton" data-id="${project.id}">Delete</button>
+                    <button class="editButton" data-id="${project.id}">Update</button>
+                </th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>2</th>
+                <th>Ecommerce Project</th>
+                <th>https://li.postimg.cc/nrCjHQk8/Angular.png</th>
+                <th>https://abcd-example.com</th>
+                <th>
+                    <p>Bootstrap</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </th>
+                <th>
+                    <button class="editButton" data-id="${project.id}">Delete</button>
+                    <button class="editButton" data-id="${project.id}">Update</button>
+                </th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>3</th>
+                <th>Chat Application</th>
+                <th>https://li.postimg.cc/nrCjHQk8/Angular.png</th>
+                <th>https://abcd-example.com</th>
+                <th>
+                    <p>MonggoDB</p>
+                    <p>Javascript</p>
+                </th>
+                <th>
+                    <button class="editButton" data-id="${project.id}">Delete</button>
+                    <button class="editButton" data-id="${project.id}">Update</button>
+                </th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>4</th>
+                <th>Social Media Platform</th>
+                <th>https://li.postimg.cc/nrCjHQk8/Angular.png</th>
+                <th>https://abcd-example.com</th>
+                <th>
+                    <p>Vue</p>
+                    <p>JavaScript</p>
+                </th>
+                <th>
+                    <button class="editButton" data-id="${project.id}">Delete</button>
+                    <button class="editButton" data-id="${project.id}">Update</button>
+                </th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>5</th>
+                <th>Image Sharing Platform</th>
+                <th>https://li.postimg.cc/nrCjHQk8/Angular.png</th>
+                <th>https://abcd-example.com</th>
+                <th>
+                    <p>React</p>
+                    <p>JavaScript</p>
+                </th>
+                <th>
+                    <button class="editButton" data-id="${project.id}">Delete</button>
+                    <button class="editButton" data-id="${project.id}">Update</button>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./admin.js"></script>
+</body>
+</html>
